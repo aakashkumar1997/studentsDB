@@ -1,0 +1,40 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.student_info_form{
+	margin: 0 auto;
+	width: 40%;
+	border: 1px solid black;
+	border-radius: 4px;
+	background-color: #DDDDDD;
+}
+
+.student_info_input_para{
+	text-align: center;
+}
+
+.student_info_input_para_button{
+	border: none;
+	padding: 15px 30px;
+	border-radius: 4px;
+	border-color: #DDDDDD;
+	background-color: #4D4D4D;
+	color: #FFFFFF;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+table{
+	width: 80%;
+	margin: 0 auto;
+}
+
+table , tr , td , th{
+	border: 1px solid black;
+}

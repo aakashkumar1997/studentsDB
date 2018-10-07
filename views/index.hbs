@@ -1,0 +1,29 @@
+<form action = "/insert" method = "post" class = "student_info_form">
+	<p class = "student_info_input_para"> Name : <input type = "text" name = "name"> </p>
+	<p class = "student_info_input_para"> Roll No. : <input type = "number" name = "roll"> </p>
+	<p class = "student_info_input_para"> Age : <input type = "number" name = "age"> </p>
+	<p class = "student_info_input_para"> Class : <input type = "number" name = "class"> </p>
+	<p class = "student_info_input_para"> Marks : <input type = "number" name = "marks"> </p><br>
+	<p class = "student_info_input_para"> <button type = "submit" class = "student_info_input_para_button">Submit</button> </p>
+</form>
+<br><br>
+<div>
+	<table class = "student_info_table">
+		<tr class = "student_info_tr">
+			<th class = "student_info_th">Name</th>
+			<th class = "student_info_th">Roll No.</th>
+			<th class = "student_info_th">Age</th>
+			<th class = "student_info_th">Class</th>
+			<th class = "student_info_th">Marks</th>
+		</tr>
+		{{#each items}}
+			<tr class = "student_info_tr">
+				<td class = "student_info_td">{{this.name}}</td>
+				<td class = "student_info_td">{{this.roll}}</td>
+				<td class = "student_info_td">{{this.age}}</td>
+				<td class = "student_info_td">{{this.class}}</td>
+				<td class = "student_info_td">{{this.marks}}</td>
+			</tr>
+		{{/each}}
+	</table>
+</div>
